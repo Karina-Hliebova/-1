@@ -1,0 +1,64 @@
+// BEGIN 27
+#include <iostream>
+using namespace std;
+
+int main()
+{
+ //швидкість човна в стоячій воді V км/год, швидуість течії річки U км/год (U < V)
+ //час руху човна по озеру T1 год, а по річці (проти течії) T2 год.
+ //S - ? (S = T * V)
+ //при русі проти течії човна зменшується на величину течії
+
+ //declarations
+  float V, U, T1, T2, S;
+
+  //введення
+  cout << "Enter speed U and time T1 on lake : ";
+  cin >> V >> T1;
+  cout << "Enter speed U of river and time T2 : ";
+  cin >> U >> T2;
+
+  //обчислення
+  S = V * T1 + U * T2;
+
+  cout << "Distance: " << S << endl;
+
+  return 0;
+
+}
+
+
+
+
+//*****BEGIN 7
+
+
+
+
+  #include <iostream>
+using namespace std;
+
+
+int main() 
+{
+    //знайти довжину кола L і площу круга S заданого радіуса R 
+    //L = 2 * pi * R; S1 = pi * R2; pi = 3.14
+
+    //declaration 
+    const float pi = 3.14;
+    float R, L, S;
+
+    // введення
+    cout << "Enter the radius of the circle: ";
+    cin >> R;
+
+    // calculation
+    L = 2 * pi * R;
+    S = pi * R * R;
+
+    //виведення 
+    cout << "Довжина кола: " << L << endl;
+    cout << "Площа кола: " << S << endl;
+
+    return 0;
+}
